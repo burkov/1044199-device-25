@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Бурков](https://up.htmlacademy.ru/htmlcss/25/user/1044199).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
