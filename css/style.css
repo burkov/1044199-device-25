@@ -1,0 +1,188 @@
+/* переменные и глобальные стили */
+
+:root {
+  --macaroni-and-cheese: #f0c52e;
+  --device-gray: #464646;
+  --primary-font-light: "Open Sans Light", Arial, sans-serif;
+  --primary-font-regular: "Open Sans Regular", Arial, sans-serif;
+  --secondary-font-bold: "Gilroy Extra Bold", Arial, sans-serif;
+  --secondary-font-light: "Gilroy Light", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+
+  font-family: var(--primary-font-light);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: var(--device-gray);
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+/* footer, header and common styles */
+
+.user-navigation,
+.site-navigation {
+  list-style: none;
+}
+
+.main-navigation {
+  color: #000000;
+  background-color: var(--macaroni-and-cheese);
+  /* FIXME: make background 50% opaque */
+}
+
+.site-navigation {
+  text-transform: uppercase;
+  font-family: var(--secondary-font-bold);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.main-navigation a,
+.main-navigation a {
+  color: #000000;
+}
+
+.footer-navigation a,
+.footer-navigation a {
+  color: #ffffff;
+}
+
+.footer-navigation .user-navigation {
+  filter: opacity(0.7);
+}
+
+.user-navigation a:focus,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:hover {
+  filter: opacity(0.5);
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  filter: opacity(0.3);
+}
+
+.button {
+  height: 40px;
+
+  font-family: var(--secondary-font-bold);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+
+  text-transform: uppercase;
+  color: #000000;
+  background-color: var(--macaroni-and-cheese);
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.footer-navigation {
+  background-color: var(--device-gray);
+  color: #ffffff;
+}
+
+/* index.html */
+
+.container h1,
+.about-us h2,
+.contacts h2 {
+  font-family: var(--secondary-font-bold);
+  font-size: 47px;
+  color: #000000
+}
+
+.about-us ul {
+  font-family: var(--secondary-font-bold);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.modal-feedback label {
+  font-family: var(--secondary-font-bold);
+  font-size: 18px;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+  font-family: var(--primary-font-light);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.catalog-categories-list {
+  font-family: var(--primary-font-light);
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+/* catalog-item.html */
+
+.breadcrumbs {
+  list-style: none;
+  opacity: 0.3;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.filter label {
+  font-size: 14px;
+}
+
+.filter h2 {
+  font-family: var(--secondary-font-bold);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.filter legend {
+  font-family: var(--secondary-font-bold);
+  font-size: 18px;
+}
+
+.filter fieldset {
+  border: 0;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: #000000;
+  font-family: var(--secondary-font-bold);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.catalog-item-price {
+  font-family: var(--secondary-font-light);
+  font-size: 16px;
+  font-weight: 300;
+}

@@ -24,7 +24,17 @@
         <li class="user-navigation-cart"><a href="#">Корзина</a></li>
       </ul>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li>
+          <a href="catalog.html">Каталог товаров</a>
+          <ul style="display: none">
+            <li><a href="catalog-item.html">Виртуальная реальность</a></li>
+            <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
+            <li><a href="catalog-item.html">Квадрокоптеры</a></li>
+            <li><a href="catalog-item.html">Моноподы для селфи</a></li>
+            <li><a href="catalog-item.html">Умные часы</a></li>
+            <li><a href="catalog-item.html">Экшн-камеры</a></li>
+          </ul>
+        </li>
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="warranty.html">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
@@ -95,22 +105,22 @@
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="feedback-form" action="feedback" method="POST">
-    <p>
-      <label>Ваше имя:
-        <input type="text" placeholder="Имя Фамилия" name="name">
-      </label>
-    </p>
-    <p>
-      <label>Ваш e-mail:
-        <input type="text" placeholder="email@example.com" name="email">
-      </label>
-    </p>
-    <p>
-      <label for="comment-field">Текст письма:</label>
-      <textarea id="comment-field" name="comment" cols="20" rows="5" placeholder="В свободной форме">
+      <p>
+        <label>Ваше имя:
+          <input type="text" placeholder="Имя Фамилия" name="name">
+        </label>
+      </p>
+      <p>
+        <label>Ваш e-mail:
+          <input type="text" placeholder="email@example.com" name="email">
+        </label>
+      </p>
+      <p>
+        <label for="comment-field">Текст письма:</label>
+        <textarea id="comment-field" name="comment" cols="20" rows="5" placeholder="В свободной форме">
       </textarea>
-    </p>
-    <button type="submit" class="button">Отправить</button>
+      </p>
+      <button type="submit" class="button">Отправить</button>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
