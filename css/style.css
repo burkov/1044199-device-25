@@ -1,22 +1,45 @@
-/* переменные и глобальные стили */
+/* шрифты */
 
-:root {
-  --macaroni-and-cheese: #f0c52e;
-  --device-gray: #464646;
-  --primary-font-light: "Open Sans Light", Arial, sans-serif;
-  --primary-font-regular: "Open Sans Regular", Arial, sans-serif;
-  --secondary-font-bold: "Gilroy Extra Bold", Arial, sans-serif;
-  --secondary-font-light: "Gilroy Light", Arial, sans-serif;
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('../fonts/opensanslight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/opensans.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroylight.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* глобальные стили */
 
 body {
   margin: 0;
 
-  font-family: var(--primary-font-light);
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
-  color: var(--device-gray);
+  color: #464646;
 
   background-color: #ffffff;
 }
@@ -45,13 +68,13 @@ a {
 
 .main-navigation {
   color: #000000;
-  background-color: var(--macaroni-and-cheese);
+  background-color: #f0c52e;
   /* FIXME: make background 50% opaque */
 }
 
 .site-navigation {
   text-transform: uppercase;
-  font-family: var(--secondary-font-bold);
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
 }
@@ -85,14 +108,14 @@ a {
 .button {
   height: 40px;
 
-  font-family: var(--secondary-font-bold);
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 3.6px;
 
   text-transform: uppercase;
   color: #000000;
-  background-color: var(--macaroni-and-cheese);
+  background-color: #f0c52e;
 }
 
 .button:active {
@@ -100,7 +123,7 @@ a {
 }
 
 .footer-navigation {
-  background-color: var(--device-gray);
+  background-color: #464646;
   color: #ffffff;
 }
 
@@ -109,32 +132,32 @@ a {
 .container h1,
 .about-us h2,
 .contacts h2 {
-  font-family: var(--secondary-font-bold);
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   color: #000000
 }
 
 .about-us ul {
-  font-family: var(--secondary-font-bold);
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
 }
 
 .modal-feedback label {
-  font-family: var(--secondary-font-bold);
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
 }
 
 .modal-feedback input,
 .modal-feedback textarea {
-  font-family: var(--primary-font-light);
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
 }
 
 .catalog-categories-list {
-  font-family: var(--primary-font-light);
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: normal;
   text-transform: none;
@@ -156,13 +179,13 @@ a {
 }
 
 .filter h2 {
-  font-family: var(--secondary-font-bold);
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .filter legend {
-  font-family: var(--secondary-font-bold);
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
 }
 
@@ -176,13 +199,13 @@ a {
 
 .catalog-item a {
   color: #000000;
-  font-family: var(--secondary-font-bold);
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
 }
 
 .catalog-item-price {
-  font-family: var(--secondary-font-light);
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
