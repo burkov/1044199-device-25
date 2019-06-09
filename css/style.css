@@ -87,8 +87,6 @@ a {
 
 .site-search-form {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 440px;
   margin-right: 100px;
@@ -98,6 +96,7 @@ a {
 .main-header-user-nav-link, .search-button, .site-search-form {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
+  font-weight: 300;
 }
 
 .search-input {
@@ -388,130 +387,140 @@ a {
   text-align: right;
 }
 
-/* TODO: reuse
-
-.footer-navigation a, .footer-navigation a {
-  color: #ffffff;
+.main-header-user-nav-account {
+  margin-right: 19px;
+  padding-left: 28px;
 }
 
-.footer-navigation .user-navigation {
-  filter: opacity(0.7);
+.main-header-user-nav-logout {
+  padding-left: 0px;
 }
 
-.user-navigation a:focus, .user-navigation a:hover, .site-navigation a:focus, .site-navigation a:hover {
-  filter: opacity(0.5);
-}
-
-.site-navigation a:active, .user-navigation a:active {
-  filter: opacity(0.3);
-}
-
-.button {
-  height: 40px;
+.catalog-page-top-wrapper h1 {
+  margin-bottom: 25px;
   font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 47px;
+  line-height: 48px;
   font-weight: 800;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
+  letter-spacing: 0.013em;
   color: #000000;
 }
 
-.button:active {
-  color: rgba(0, 0, 0, 0.3)
-}
-
-.footer-navigation {
-  color: #ffffff;
-}
-
-
-.page-catalog header {
-  min-height: 185px;
-  margin-bottom: 37px;
-}
-
-.container h1 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 47px;
-  color: #000000
-}
-
-.modal-feedback label {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-}
-
-.modal-feedback input, .modal-feedback textarea {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-}
-
-.catalog-categories-list {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  text-transform: none;
-  list-style: none;
-  letter-spacing: normal;
-  margin: 18px 0 0 0;
-  padding: 0;
-  width: 600px;
-}
-
-.catalog-categories-sublist {
-  list-style: none;
-  display: flex;
-  margin: 0 0px 6px 0;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.catalog-categories-sublist li {
-  margin-right: 40px;
+.catalog-page-top-wrapper {
+  padding: 0 60px;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 37px;
+  padding: 0;
   list-style: none;
-  opacity: 0.3;
 }
 
-.breadcrumbs a {
+.breadcrumbs li {
+  margin-right: 37px;
+}
+
+.breadcrumbs a, .breadcrumbs .breadcrumbs-current {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+}
+
+.catalog-content .container {
+  display: flex;
+}
+
+.catalog-content .filter {
+  box-sizing: border-box;
+  width: 330px;
+  padding-left: 60px;
+  padding-top: 70px;
+  background-color: #eeeeee;
+}
+
+.catalog-filter-form {
+  width: 200px;
+  padding-right: 70px;
+}
+
+.catalog-filter-form fieldset {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  position: relative;
+  border: none;
+}
+
+.catalog-filter-form legend {
+  margin-bottom: 18px;
+  padding-top: 12px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+  font-weight: 800;
+  letter-spacing: 0.01em;
   color: #000000;
 }
 
-.filter label {
+.catalog-filter-form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-filter-form label {
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  color: #000000;
 }
 
-.filter h2 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
+.filter-list-bt label, .filter-list-color label {
+  position: relative;
+  padding-left: 39px;
+  cursor: pointer;
 }
 
-.filter legend {
+.button {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 8px 35px;
   font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
   font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: transparent;
+  border: none;
 }
 
-.filter fieldset {
-  border: 0;
+.catalog-items {
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: -11px;
+  padding: 0;
   list-style: none;
+  width: 780px;
 }
 
-.catalog-item a {
-  color: #000000;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
+.catalog-item {
+  margin: 10px;
+  margin-bottom: 27px;
 }
-
-.catalog-item-price {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-} */
