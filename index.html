@@ -7,102 +7,138 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <style>
+    /* body {
+      background-image: url("img/copy.png");
+      background-size: 1920px auto;
+      background-position: top center;
+      background-repeat: no-repeat;
+    } */
+  </style>
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
-      </a>
-      <form method="GET" action="search">
-        <input type="text" placeholder="Поиск по сайту" class="site-search" name="query">
-      </form>
-      <ul class="user-navigation">
-        <li class="user-navigation-login"><a href="#">Войти</a></li>
-        <li class="user-navigation-compare"><a href="#">Сравнить</a></li>
-        <li class="user-navigation-cart"><a href="#">Корзина</a></li>
-      </ul>
-      <ul class="site-navigation">
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <ul style="display: none">
-            <li><a href="catalog-item.html">Виртуальная реальность</a></li>
-            <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
-            <li><a href="catalog-item.html">Квадрокоптеры</a></li>
-            <li><a href="catalog-item.html">Моноподы для селфи</a></li>
-            <li><a href="catalog-item.html">Умные часы</a></li>
-            <li><a href="catalog-item.html">Экшн-камеры</a></li>
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <div class="main-header-logo">
+          <a><img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»"></a>
+        </div>
+        <div class="main-header-top-wrapper">
+          <form class="site-search-form" method="GET" action="search">
+            <label class="visually-hidden" for="search-field">Поле поиска</label>
+            <input id="search-field" type="search" class="search-input" name="query" placeholder="Поиск по сайту">
+            <button type="submit" class="button search-button">Найти</button>
+          </form>
+          <a class="main-header-user-nav-link main-header-user-nav-profile" href="#">Войти</a>
+          <a class="main-header-user-nav-link main-header-user-nav-compare" href="#">Сравнить</a>
+          <a class="main-header-user-nav-link main-header-user-nav-cart" href="#">Корзина</a>
+        </div>
+        <div class="main-header-bottom-wrapper">
+          <ul class="main-header-site-navigation">
+            <li class="main-header-site-nav-catalog">
+              <a href="#">Каталог товаров</a>
+              <div class="catalog-categories-list">
+                <ul class="catalog-categories-sublist">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="catalog-item.html">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="catalog-categories-sublist">
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul class="catalog-categories-sublist">
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-header-site-nav-delivery"><a href="delivery.html">Доставка</a></li>
+            <li class="main-header-site-nav-warranty"><a href="warranty.html">Гарантия</a></li>
+            <li class="main-header-site-nav-contacts"><a href="contacts.html">Контакты</a></li>
           </ul>
-        </li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
-    <!-- пропущена большая часть страницы, которую пока не надо верстать -->
-    <section class=about-us>
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными</p>
-      компаниями:
-      <ul>
-        <li>Деловые Линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <a class="button" href="about-us.html">Подробнее о нас</a>
-    </section>
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
-        бывает.</p>
-      <p>
-        <a href="https://goo.gl/maps/Piabnt1vbGPg799L7">
-          <img src="img/map-small.jpg" width="560" height="222" alt="Адрес магазина: Москва, ул. Строителей, 15">
-        </a>
-      </p>
-      <a class="button" href="feedback.html">Напишите нам</a>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <nav class="footer-navigation">
-      <a class="footer-logo">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
-      </a>
-      <ul class="user-navigation">
-        <li class="user-navigation-login"><a href="#">Войти</a></li>
-        <li class="user-navigation-compare"><a href="#">Сравнить</a></li>
-        <li class="user-navigation-cart"><a href="#">Корзина</a></li>
-      </ul>
-      <ul class="site-navigation">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <address class="footer-address">
-        <p class="footer-address-building">г. Москва, ул. Строителей, 15</p>
-        <p class="footer-address-phone">Тел.: +7 (495) 495-95-95</p>
-      </address>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" width="27" height="35" alt="Разработано в HtmlAcademy">
-        </a>
-      </div>
-    </nav>
-  </footer>
+        </div>
+      </nav>
+    </header>
+  </div>
 
-  <section class="modal modal-feedback">
+  <main class="main-content">
+    <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
+    <div class="main-content-bottom-wrapper container">
+      <section class=about-us>
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными
+          компаниями:
+        </p>
+        <ul class="about-us-delivery">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="modal-link" href="about-us.html">Подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+          Всякое
+          бывает.</p>
+        <p>
+          <a class="contacts-map-link" href="https://goo.gl/maps/Piabnt1vbGPg799L7">
+            <img src="img/map-small.jpg" width="560" height="222" alt="Адрес магазина: Москва, ул. Строителей, 15">
+          </a>
+        </p>
+        <a class="modal-link" href="feedback.html">Напишите нам</a>
+      </section>
+    </div>
+  </main>
+  <div style="height: 164px"></div>
+
+  <footer class="main-footer">
+    <div class="container">
+      <nav class="footer-navigation">
+        <div class="footer-upper-wrapper">
+          <a class="footer-logo">
+            <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
+          </a>
+          <ul class="footer-user-navigation">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="footer-central-wrapper">
+          <address class="footer-address-building">
+            г. Москва, ул. Строителей, 15
+          </address>
+          <ul class="footer-site-navigation">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <address class="footer-address-phone">
+            Тел.: +7 (495) 495-95-95
+          </address>
+        </div>
+        <div class="footer-lower-wrapper">
+          <div class="footer-longdash"></div>
+          <div class="footer-social">
+            <ul>
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+              <li><a class="social-button" href="#">Твиттер</a></li>
+            </ul>
+          </div>
+          <div class="footer-copyright">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-html.svg" width="27" height="35" alt="Разработано в HtmlAcademy">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </footer>
+  <section class="modal modal-feedback visually-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="feedback-form" action="feedback" method="POST">
       <p>
@@ -125,7 +161,7 @@
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-  <section class="modal modal-map">
+  <section class="modal modal-map visually-hidden">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <a href="https://goo.gl/maps/Piabnt1vbGPg799L7">
       <img src="img/map-big.jpg" width="960" height="559" alt="Адрес магазина: Москва, ул. Строителей, 15">
