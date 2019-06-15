@@ -113,8 +113,10 @@ a {
   font-weight: 300;
 }
 
+
 .search-input {
   position: relative;
+  font-weight: 300;
   width: 357px;
   margin: 0;
   padding: 8px 0 8px 40px;
@@ -125,16 +127,54 @@ a {
   color: rgba(0, 0, 0, .3);
 }
 
+
+.search-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-input:focus {
+  color: #000000;
+  border-bottom-color: #000000;
+  outline: none;
+}
+
+.search-input:focus + .search-button {
+  visibility: visible;
+}
+
 .search-button {
   padding: 8px 18px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
   line-height: 30px;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   text-transform: none;
-  font-weight: 400;
-  color: #000;
+  color: #000000;
   background-color: transparent;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   visibility: hidden;
+}
+
+.search-button:hover,
+.search-button:focus {
+  color: #ffffff;
+  background-color: #000000;
+  visibility: visible;
+}
+
+.search-button:focus {
+  visibility: visible;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+  visibility: visible;
 }
 
 .main-header-user-nav-link {
@@ -143,6 +183,26 @@ a {
   line-height: 30px;
   color: #000;
   letter-spacing: .01em;
+}
+
+
+.main-header-user-nav-link:hover,
+.main-header-user-nav-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header-user-nav-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.main-header-user-nav-link:focus::before,
+.main-header-user-nav-link:hover::before {
+  opacity: 0.6;
+}
+
+.main-header-user-nav-link:active::before {
+  opacity: 0.3;
 }
 
 .main-header-user-nav-link::before {
@@ -181,6 +241,15 @@ a {
   font-weight: 800;
   letter-spacing: .2em;
   color: #000;
+}
+
+.main-header-site-navigation a:hover,
+.main-header-site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header-site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-header-site-nav-catalog {
@@ -717,15 +786,6 @@ a {
 .catalog-item {
   margin: 10px;
   margin-bottom: 27px;
-}
-
-.catalog-header .container {
-  display: flex;
-  border: 0.5px solid salmon;
-}
-
-.catalog-header .container * {
-  border: 0.5px solid salmon;
 }
 
 .catalog-header {
