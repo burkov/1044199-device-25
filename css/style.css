@@ -264,6 +264,10 @@ a {
   opacity: 0.3;
 }
 
+.main-header-site-nav-catalog:first-child:hover .catalog-categories-list, .main-header-site-nav-catalog:first-child>a:focus+.catalog-categories-list {
+  display: flex;
+}
+
 .main-header-site-nav-delivery {
   margin-right: 35px;
 }
@@ -276,7 +280,7 @@ a {
   position: absolute;
   left: 0;
   z-index: 5;
-  display: flex;
+  display: none;
   width: 1040px;
   margin: 0;
   background-color: #f7e296;
@@ -954,6 +958,10 @@ a {
   line-height: 24px;
 }
 
+.slider .container {
+  position: relative;
+}
+
 .slider {
   position: relative;
   top: -112px;
@@ -973,6 +981,10 @@ a {
 .slider-dots li {
   display: inline-block;
   margin-right: 28px;
+}
+
+.slider-cb:checked+label::before {
+  background-image: url(../img/slider-button.svg);
 }
 
 .slides-list {
@@ -1053,6 +1065,14 @@ a {
 .catalog-categories-item p {
   white-space: normal;
   width: 160px;
+}
+
+.catalog-categories-item-link:active svg, .catalog-categories-item-link:active p {
+  opacity: 0.3;
+}
+
+.catalog-categories-item .image-wrapper:hover {
+  background-color: #f0c52e;
 }
 
 .catalog-categories svg {
@@ -1236,10 +1256,6 @@ a {
   display: none;
 }
 
-.services-content .services-content-shown {
-  display: block;
-}
-
 .services-content-headline {
   margin-bottom: 30px;
   font-family: Gilroy, Arial, sans-serif;
@@ -1256,6 +1272,30 @@ a {
   letter-spacing: .01em;
   font-weight: 300;
 }
+
+.services-content div::after {
+  content: "";
+  position: absolute;
+  top: -67px;
+  left: 493px;
+  width: 260px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.services-content div:nth-child(1)::after {
+  background-image: url("../img/delivery.svg");
+}
+
+.services-content div:nth-child(2)::after {
+  background-image: url("../img/warranty.svg");
+}
+
+.services-content div:nth-child(3)::after {
+  background-image: url("../img/credit.svg");
+}
+
 
 .featured-brands ul {
   display: flex;
@@ -1363,6 +1403,14 @@ a {
 .catalog-header-sorting h2 {
   padding-left: 70px;
   width: 200px;
+}
+
+
+.services-content div {
+  display: none;
+}
+.services-content div.services-content-shown {
+  display: block;
 }
 
 .catalog-header-sorting ul {

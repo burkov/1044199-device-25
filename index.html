@@ -29,7 +29,7 @@
           <ul class="main-header-site-navigation">
             <li class="main-header-site-nav-catalog">
               <a href="#">Каталог товаров</a>
-              <div class="catalog-categories-list visually-hidden">
+              <div class="catalog-categories-list">
                 <ul class="catalog-categories-sublist">
                   <li><a href="#">Виртуальная реальность</a></li>
                   <li><a href="catalog-item.html">Моноподы для селфи</a></li>
@@ -57,23 +57,23 @@
     <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
     <section class="slider">
       <h2 class="visually-hidden">Слайдер товаров</h2>
-      <ul class="slider-dots">
-        <li>
-          <input type="radio" id="first-slide" name="not-used" checked class="visually-hidden">
-          <label for=first-slide">Первый слайд</label>
-        </li>
-        <li>
-          <input type="radio" id="second-slide" name="not-used" class="visually-hidden">
-          <label for=second-slide">Второй слайд</label>
-        </li>
-        <li>
-          <input type="radio" id="third-slide" name="not-used" class="visually-hidden">
-          <label for=third-slide">Третий слайд</label>
-        </li>
-      </ul>
       <div class="container">
+        <ul class="slider-dots">
+          <li>
+            <input type="radio" id="first-slide" name="not-used" checked class="visually-hidden slider-cb">
+            <label for=first-slide">Первый слайд</label>
+          </li>
+          <li>
+            <input type="radio" id="second-slide" name="not-used" class="visually-hidden slider-cb">
+            <label for=second-slide">Второй слайд</label>
+          </li>
+          <li>
+            <input type="radio" id="third-slide" name="not-used" class="visually-hidden slider-cb">
+            <label for=third-slide">Третий слайд</label>
+          </li>
+        </ul>
         <ul class="slides-list">
-          <li class="slides-list-item">
+          <li class="slides-list-item  slides-list-item-shown">
             <div class="slides-list-item-image">
               <img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
             </div>
@@ -120,7 +120,7 @@
               </table>
             </div>
           </li>
-          <li class="slides-list-item slides-list-item-shown">
+          <li class="slides-list-item">
             <div class="slides-list-item-image">
               <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
             </div>
@@ -153,7 +153,7 @@
       <div class="container">
         <ul>
           <li class="catalog-categories-item">
-            <a href="#">
+            <a class="catalog-categories-item-link" href="#">
               <div class="image-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="97" height="55" viewBox="0 0 97 55">
                   <g fill="#363636">
@@ -166,7 +166,7 @@
             </a>
           </li>
           <li class="catalog-categories-item">
-            <a href="catalog.html">
+            <a class="catalog-categories-item-link" href="catalog.html">
               <div class="image-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="86" height="117" viewBox="0 0 86 117">
                   <g fill="#363636">
@@ -179,9 +179,8 @@
             </a>
           </li>
           <li class="catalog-categories-item">
-            <a href="#">
+            <a class="catalog-categories-item-link" href="#">
               <div class="image-wrapper">
-
                 <svg xmlns="http://www.w3.org/2000/svg" width="71" height="87" viewBox="0 0 71 87">
                   <g fill="#363636">
                     <path
@@ -200,7 +199,7 @@
             </a>
           </li>
           <li class="catalog-categories-item">
-            <a href="#">
+            <a class="catalog-categories-item-link" href="#">
               <div class="image-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="107" height="65" viewBox="0 0 107 65">
                   <g fill="#363636">
@@ -212,8 +211,8 @@
               <p>Фитнес-браслеты</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="catalog-categories-item">
+            <a class="catalog-categories-item-link" href="#">
               <div class="image-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="56" height="98" viewBox="0 0 56 98">
                   <g fill="#363636">
@@ -225,10 +224,9 @@
               <p>Умные часы</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="catalog-categories-item">
+            <a class="catalog-categories-item-link href="#">
               <div class="image-wrapper">
-
                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="69" viewBox="0 0 132 69">
                   <g fill="#363636">
                     <path
@@ -259,17 +257,20 @@
         <div class="services-content">
           <div class="services-content-shown">
             <p class="services-content-headline">Доставка</p>
-            <p class="services-content-main">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+            <p class="services-content-main">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+              бесплатно! Ведь мы неплохо
               заработаем, поднимая его на ваш этаж.</p>
           </div>
           <div>
             <p class="services-content-headline">Гарантия</p>
-            <p class="services-content-main">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+            <p class="services-content-main">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+              переживайте, мы выдадим вам
               новый.<br> Товар, не дом, конечно же.</p>
           </div>
           <div>
             <p class="services-content-headline">Кредит</p>
-            <p class="services-content-main">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+            <p class="services-content-main">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+              наиболее выгодные условия
               кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
         </div>
@@ -333,7 +334,7 @@
   </main>
 
 
-  <!-- <footer class="main-footer">
+  <footer class="main-footer">
     <div class="container">
       <nav class="footer-navigation">
         <div class="footer-upper-wrapper">
@@ -379,7 +380,7 @@
       </nav>
     </div>
   </footer>
-  <section class="modal modal-feedback visually-hidden">
+  <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="feedback-form" action="feedback" method="POST">
       <p>
@@ -408,7 +409,8 @@
       <img src="img/map-big.jpg" width="960" height="559" alt="Адрес магазина: Москва, ул. Строителей, 15">
     </a>
     <button class="modal-close" type="button">Закрыть</button>
-  </section> -->
+  </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
