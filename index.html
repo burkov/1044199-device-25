@@ -225,7 +225,7 @@
             </a>
           </li>
           <li class="catalog-categories-item">
-            <a class="catalog-categories-item-link href="#">
+            <a class="catalog-categories-item-link href=" #">
               <div class="image-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="69" viewBox="0 0 132 69">
                   <g fill="#363636">
@@ -383,31 +383,31 @@
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="feedback-form" action="feedback" method="POST">
-      <p>
-        <label>Ваше имя:
-          <input type="text" placeholder="Имя Фамилия" name="name">
-        </label>
-      </p>
-      <p>
-        <label>Ваш e-mail:
-          <input type="text" placeholder="email@example.com" name="email">
-        </label>
-      </p>
-      <p>
-        <label for="comment-field">Текст письма:</label>
-        <textarea id="comment-field" name="comment" cols="20" rows="5" placeholder="В свободной форме">
-      </textarea>
-      </p>
+      <div class="feedback-form-wrapper">
+        <div class="feedback-form-column">
+          <label for="feedback-name">Ваше имя:</label>
+          <input type="text" placeholder="Имя Фамилия" name="name" id="feedback-name">
+        </div>
+        <div class="feedback-form-column">
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input type="text" placeholder="email@example.com" name="email" id="feedback-email">
+        </div>
+      </div>
+      <div class="feedback-form-column">
+        <label for="feedback-comment">Текст письма:</label>
+        <textarea id="feedback-comment" name="comment" cols="20" rows="5" placeholder="В свободной форме"></textarea>
+      </div>
       <button type="submit" class="button">Отправить</button>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-  <section class="modal modal-map visually-hidden">
+  <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <a href="https://goo.gl/maps/Piabnt1vbGPg799L7">
-      <img src="img/map-big.jpg" width="960" height="559" alt="Адрес магазина: Москва, ул. Строителей, 15">
-    </a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4498.1553158150755!2d37.5284326!3d55.6876376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522103678551" width="960" height="560" style="border:0" allowfullscreen></iframe>
+    <!-- <a href="https://goo.gl/maps/Piabnt1vbGPg799L7"> -->
+    <!-- <img src="img/map-big.jpg" width="960" height="559" alt="Адрес магазина: Москва, ул. Строителей, 15"> -->
+    <!-- </a> -->
     <button class="modal-close" type="button">Закрыть</button>
   </section>
   <script src="js/script.js"></script>
