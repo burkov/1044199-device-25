@@ -31,7 +31,7 @@
           <ul class="main-header-site-navigation">
             <li class="main-header-site-nav-catalog">
               <a href="#">Каталог товаров</a>
-              <div class="catalog-categories-list" style="display: none;">
+              <div class="catalog-categories-list">
                 <ul class="catalog-categories-sublist">
                   <li><a href="#">Виртуальная реальность</a></li>
                   <li><a href="catalog-item.html">Моноподы для селфи</a></li>
@@ -75,7 +75,7 @@
             <h2>Сортировка:</h2>
             <ul class="catalog-header-sorting-type">
               <li>
-                <a href="#">По цене</a>
+                <a class="current" href="#">По цене</a>
               </li>
               <li>
                 <a href="#">По типу</a>
@@ -103,8 +103,19 @@
             <form class="catalog-filter-form" action="catalog-filter" method="GET">
               <fieldset>
                 <legend>Стоимость</legend>
-                <div>
-                </div>
+                <div class="filter-price-range">
+                    <div class="filter-price-controls">
+                      <div class="empty-bar">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <label class="price-label" for="filter-min-price">от</label>
+                    <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
+                    <label class="price-label" for="filter-max-price">до</label>
+                    <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
+                  </div>
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
@@ -150,7 +161,6 @@
                       name="with-bluetooth" value="false">
                     <label class="form-label" for="without-bluetooth">Нет</label>
                   </li>
-                  <!-- FIXME не переключается селектор, починить -->
                 </ul>
               </fieldset>
               <button class="button button-show" type="submit">Показать</button>
@@ -208,7 +218,7 @@
               <a href="#" class="catalog-nav-button">Назад</a>
               <ul class="catalog-pagination-pages">
                 <li>
-                  <a href="#">1</a>
+                  <a class="current" href="#">1</a>
                 </li>
                 <li>
                   <a href="#">2</a>

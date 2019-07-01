@@ -803,15 +803,25 @@ a {
   background-image: url(../img/checkbox-off.svg);
 }
 
+.form-input-cb+.form-label:hover::before {
+  opacity: .6;
+}
+
 .form-input-radio:checked+label::before {
   background-image: url(../img/radio-on.svg);
   background-repeat: no-repeat;
+}
+
+.form-input-radio+.form-label:hover::before {
+  opacity: .6;
 }
 
 .form-input-radio+label::before {
   top: -5px;
   background-image: url(../img/radio-off.svg);
 }
+
+
 
 .button-show::after {
   content: "";
@@ -892,7 +902,7 @@ a {
   min-height: 70px;
   box-sizing: border-box;
   margin: 20px 0 75px 20px;
-  padding: 24px 0;
+  padding: 0;
   background-color: #ebebeb;
 }
 
@@ -905,18 +915,27 @@ a {
   padding: 0;
 }
 
+
+.catalog-pagination-pages a:hover {
+  color: rgba(0,0,0,.6);
+}
+
+.catalog-pagination-pages a:active,
+.catalog-pagination-pages a.current {
+  color: #000;
+}
+
 .catalog-pagination-pages a {
   color: rgba(0, 0, 0, .3);
   font-size: 16px;
   line-height: 24px;
-  color: #000;
   letter-spacing: .2em;
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 700;
 }
 
 .catalog-nav-button {
-  padding: 0px 26px 0px 30px;
+  padding: 24px 26px 24px 30px;
   font-size: 16px;
   line-height: 24px;
   color: #000;
@@ -1435,6 +1454,24 @@ a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(0, 0, 0, .3);
+}
+
+.catalog-header-sorting-direction-desc:hover::before, .catalog-header-sorting-direction-desc:focus::before, .catalog-header-sorting-direction-asc:hover::before, .catalog-header-sorting-direction-asc:focus::before {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.catalog-header-sorting-direction-asc:active::before, .catalog-header-sorting-direction-desc:active::before {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.catalog-header-sorting a:hover {
+  color: rgba(0, 0, 0, .6);
+}
+
+.catalog-header-sorting a:active, .catalog-header-sorting a.current {
   color: #000;
 }
 
@@ -1711,4 +1748,71 @@ a {
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-price-range input {
+  width: 50px;
+}
+
+.filter-price-controls {
+  position: relative;
+  margin-top: 17px;
+  margin-bottom: 8px;
+}
+
+.filter-price-controls .empty-bar {
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.filter-price-controls .bar {
+  position: absolute;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background: #91c92f;
+}
+
+.range-toggle {
+  content: "";
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:active {
+  transform: scale(1.2);
+}
+
+.range-toggle-min {
+  left: -6px;
+}
+
+.range-toggle-max {
+  left: 107px;
+}
+
+.catalog-filter-form .price-label,
+.catalog-filter-form .price-value {
+  border: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+}
+
+.catalog-nav-button:active {
+  background-color: #d9d9d9;
+  color: rgba(0,0,0,.3);
+}
+
+.catalog-nav-button:focus, .catalog-nav-button:hover {
+  background-color: #d9d9d9;
 }
