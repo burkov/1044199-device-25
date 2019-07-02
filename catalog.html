@@ -104,18 +104,18 @@
               <fieldset>
                 <legend>Стоимость</legend>
                 <div class="filter-price-range">
-                    <div class="filter-price-controls">
-                      <div class="empty-bar">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="range-toggle range-toggle-min"></div>
-                      <div class="range-toggle range-toggle-max"></div>
+                  <div class="filter-price-controls">
+                    <div class="empty-bar">
+                      <div class="bar"></div>
                     </div>
-                    <label class="price-label" for="filter-min-price">от</label>
-                    <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
-                    <label class="price-label" for="filter-max-price">до</label>
-                    <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
                   </div>
+                  <label class="price-label" for="filter-min-price">от</label>
+                  <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
+                  <label class="price-label" for="filter-max-price">до</label>
+                  <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
+                </div>
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
@@ -171,7 +171,13 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <a href="catalog-item.html">
-                  <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <div class="image-and-hover-buttons-wrapper">
+                    <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    <div class="hover-buttons">
+                      <button type="button" class="button add-to-cart-button">В корзину</button>
+                      <button type="button" class="compare-button">Добавить к сравнению</button>
+                    </div>
+                  </div>
                 </a>
                 <div class="catalog-item-bottom-wrapper">
                   <a href="catalog-item.html">
@@ -182,7 +188,13 @@
               </li>
               <li class="catalog-item">
                 <a href="catalog-item.html">
-                  <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                  <div class="image-and-hover-buttons-wrapper">
+                    <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                    <div class="hover-buttons">
+                      <button type="button" class="button add-to-cart-button">В корзину</button>
+                      <button type="button" class="compare-button">Добавить к сравнению</button>
+                    </div>
+                  </div>
                 </a>
                 <div class="catalog-item-bottom-wrapper">
                   <a href="catalog-item.html">
@@ -193,7 +205,13 @@
               </li>
               <li class="catalog-item">
                 <a href="catalog-item.html">
-                  <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  <div class="image-and-hover-buttons-wrapper">
+                    <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <div class="hover-buttons">
+                      <button type="button" class="button add-to-cart-button">В корзину</button>
+                      <button type="button" class="compare-button">Добавить к сравнению</button>
+                    </div>
+                  </div>
                 </a>
                 <div class="catalog-item-bottom-wrapper">
                   <a href="catalog-item.html">
@@ -202,9 +220,15 @@
                   <p class="catalog-item-price">2 500 руб.</p>
                 </div>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <a href="catalog-item.html">
-                  <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                  <div class="image-and-hover-buttons-wrapper">
+                    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                    <div class="hover-buttons">
+                      <button type="button" class="button add-to-cart-button">В корзину</button>
+                      <button type="button" class="compare-button">Добавить к сравнению</button>
+                    </div>
+                  </div>
                 </a>
                 <div class="catalog-item-bottom-wrapper">
                   <a href="catalog-item.html">

@@ -659,6 +659,83 @@ a {
   margin-bottom: 37px;
 }
 
+
+.image-and-hover-buttons-wrapper {
+  position: relative;
+}
+
+.image-and-hover-buttons-wrapper:hover img{
+  opacity: 0.7;
+}
+
+.hover-buttons {
+  display: none;
+}
+
+.image-and-hover-buttons-wrapper:hover .hover-buttons {
+  position: absolute;
+  top: 177px;
+  left: 80px;
+  display: block;
+  width: 200px;
+}
+
+.add-to-cart-button {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.compare-button {
+  width: 200px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: none;
+  background-color: transparent;
+
+}
+
+.compare-button:hover,
+.compare-button:focus {
+  color: #000000;
+}
+
+.compare-button:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item {
+  position: relative;
+}
+
+.catalog-item.new::before {
+  content: "new";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  z-index: 3;
+  width: 60px;
+  height: 60px;
+  padding: 18px 12px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+}
+
+
+
+
 .catalog-page-top-wrapper h1 {
   margin-bottom: 25px;
   font-family: "Gilroy", Arial, sans-serif;
