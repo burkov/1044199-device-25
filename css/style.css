@@ -111,7 +111,9 @@ a {
   background-position: 5px 50%;
 }
 
-.main-header-user-nav-link, .search-button, .site-search-form {
+.main-header-user-nav-link,
+.search-button,
+.site-search-form {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -162,7 +164,8 @@ a {
   visibility: hidden;
 }
 
-.search-button:hover, .search-button:focus {
+.search-button:hover,
+.search-button:focus {
   color: #ffffff;
   background-color: #000000;
   visibility: visible;
@@ -186,7 +189,8 @@ a {
   letter-spacing: .01em;
 }
 
-.main-header-user-nav-link:hover, .main-header-user-nav-link:focus {
+.main-header-user-nav-link:hover,
+.main-header-user-nav-link:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -194,7 +198,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-header-user-nav-link:focus::before, .main-header-user-nav-link:hover::before {
+.main-header-user-nav-link:focus::before,
+.main-header-user-nav-link:hover::before {
   opacity: 0.6;
 }
 
@@ -240,7 +245,8 @@ a {
   color: #000;
 }
 
-.main-header-site-navigation a:hover, .main-header-site-navigation a:focus {
+.main-header-site-navigation a:hover,
+.main-header-site-navigation a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -268,7 +274,8 @@ a {
   opacity: 0.3;
 }
 
-.main-header-site-nav-catalog:first-child:hover .catalog-categories-list, .main-header-site-nav-catalog:first-child>a:focus+.catalog-categories-list {
+.main-header-site-nav-catalog:first-child:hover .catalog-categories-list,
+.main-header-site-nav-catalog:first-child>a:focus+.catalog-categories-list {
   display: flex;
 }
 
@@ -333,7 +340,8 @@ a {
   margin-bottom: 80px;
 }
 
-.contacts, .about-us {
+.contacts,
+.about-us {
   width: 560px;
   position: relative;
 }
@@ -347,7 +355,8 @@ a {
   color: #000000;
 }
 
-.contacts p, .about-us p {
+.contacts p,
+.about-us p {
   margin-bottom: 30px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -486,7 +495,8 @@ a {
   letter-spacing: .01em;
 }
 
-.footer-user-navigation a:hover, .footer-user-navigation a:focus {
+.footer-user-navigation a:hover,
+.footer-user-navigation a:focus {
   color: #ffffff;
 }
 
@@ -540,7 +550,8 @@ a {
   background-color: #ffc600;
 }
 
-.footer-lower-wrapper, .footer-central-wrapper {
+.footer-lower-wrapper,
+.footer-central-wrapper {
   position: relative;
   margin-bottom: 45px;
   display: flex;
@@ -555,7 +566,8 @@ a {
   text-align: right;
 }
 
-.footer-address-phone, .footer-address-building {
+.footer-address-phone,
+.footer-address-building {
   width: 250px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -584,7 +596,8 @@ a {
   color: #fff;
 }
 
-.footer-site-navigation a:hover, .footer-site-navigation a:focus {
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -627,7 +640,8 @@ a {
   text-align: right;
 }
 
-.footer-copyright:hover img, .footer-copyright:focus img {
+.footer-copyright:hover img,
+.footer-copyright:focus img {
   opacity: 0.6;
 }
 
@@ -700,7 +714,8 @@ a {
   background-color: transparent;
 }
 
-.compare-button:hover, .compare-button:focus {
+.compare-button:hover,
+.compare-button:focus {
   color: #000000;
 }
 
@@ -771,7 +786,8 @@ a {
   border-bottom: 2px solid black;
 }
 
-.breadcrumbs a:hover, .breadcrumbs a:focus {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -783,7 +799,8 @@ a {
   margin-right: 37px;
 }
 
-.breadcrumbs a, .breadcrumbs .breadcrumbs-current {
+.breadcrumbs a,
+.breadcrumbs .breadcrumbs-current {
   position: relative;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -922,7 +939,8 @@ a {
   transition: height 0.3s;
 }
 
-.filter-list-bt label, .filter-list-color label {
+.filter-list-bt label,
+.filter-list-color label {
   position: relative;
   padding-left: 39px;
   cursor: pointer;
@@ -992,7 +1010,8 @@ a {
   color: rgba(0, 0, 0, .6);
 }
 
-.catalog-pagination-pages a:active, .catalog-pagination-pages a.current {
+.catalog-pagination-pages a:active,
+.catalog-pagination-pages a.current {
   color: #000;
 }
 
@@ -1157,7 +1176,8 @@ a {
   width: 160px;
 }
 
-.catalog-categories-item-link:active svg, .catalog-categories-item-link:active p {
+.catalog-categories-item-link:active svg,
+.catalog-categories-item-link:active p {
   opacity: 0.3;
 }
 
@@ -1295,7 +1315,9 @@ a {
   font-weight: 700;
 }
 
-.services-list-item:not(.current) .services-list-item-link:not(:active)::after, .services-list-item:not(.current) .services-list-item-link:not(:hover)::after, .services-list-item:not(.current):not(:active) .services-list-item-link:not(:active)::after {
+.services-list-item:not(.current) .services-list-item-link:not(:active)::after,
+.services-list-item:not(.current) .services-list-item-link:not(:hover)::after,
+.services-list-item:not(.current):not(:active) .services-list-item-link:not(:active)::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1325,13 +1347,16 @@ a {
   transition: height 0.3s;
 }
 
-.services-list-item .services-list-item-link:active::after, .services-list-item:not(.current):active .services-list-item-link::after {
+.services-list-item .services-list-item-link:active::after,
+.services-list-item:not(.current):active .services-list-item-link::after {
   position: absolute;
   z-index: -1;
   background-color: #000000;
 }
 
-.services-list-item .services-list-item-link:active, .services-list-item.current a.services-list-item-link, .services-list-item:active .services-list-item-link {
+.services-list-item .services-list-item-link:active,
+.services-list-item.current a.services-list-item-link,
+.services-list-item:active .services-list-item-link {
   z-index: 2;
   color: #f7e184;
   background-image: none;
@@ -1431,7 +1456,8 @@ a {
   background-image: url("../img/logo-4-hover.png");
 }
 
-.contacts h2::before, .about-us h2::before {
+.contacts h2::before,
+.about-us h2::before {
   top: -13px;
   left: 0;
   width: 80px;
@@ -1469,7 +1495,7 @@ a {
 }
 
 .catalog-header {
-  background-image: linear-gradient( to right, #dcdcdc 0%, #dcdcdc 50%, #ebebeb 50%, #ebebeb 100%);
+  background-image: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 50%, #ebebeb 50%, #ebebeb 100%);
 }
 
 .catalog-header-sorting {
@@ -1510,7 +1536,8 @@ a {
   flex-wrap: wrap;
 }
 
-.catalog-header-sorting h2, .catalog-header-filter h2 {
+.catalog-header-sorting h2,
+.catalog-header-filter h2 {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
@@ -1528,12 +1555,16 @@ a {
   color: rgba(0, 0, 0, .3);
 }
 
-.catalog-header-sorting-direction-desc:hover::before, .catalog-header-sorting-direction-desc:focus::before, .catalog-header-sorting-direction-asc:hover::before, .catalog-header-sorting-direction-asc:focus::before {
+.catalog-header-sorting-direction-desc:hover::before,
+.catalog-header-sorting-direction-desc:focus::before,
+.catalog-header-sorting-direction-asc:hover::before,
+.catalog-header-sorting-direction-asc:focus::before {
   cursor: pointer;
   opacity: 0.4;
 }
 
-.catalog-header-sorting-direction-asc:active::before, .catalog-header-sorting-direction-desc:active::before {
+.catalog-header-sorting-direction-asc:active::before,
+.catalog-header-sorting-direction-desc:active::before {
   cursor: pointer;
   opacity: 1;
 }
@@ -1542,7 +1573,8 @@ a {
   color: rgba(0, 0, 0, .6);
 }
 
-.catalog-header-sorting a:active, .catalog-header-sorting a.current {
+.catalog-header-sorting a:active,
+.catalog-header-sorting a.current {
   color: #000;
 }
 
@@ -1568,7 +1600,8 @@ a {
   position: relative;
 }
 
-.catalog-header-sorting-direction-desc::before, .catalog-header-sorting-direction-asc::before {
+.catalog-header-sorting-direction-desc::before,
+.catalog-header-sorting-direction-asc::before {
   content: "";
   display: inline-block;
   opacity: .2;
@@ -1627,7 +1660,8 @@ a {
   cursor: pointer;
 }
 
-.modal-close::before, .modal-close::after {
+.modal-close::before,
+.modal-close::after {
   content: "";
   position: absolute;
   top: 26px;
@@ -1645,7 +1679,8 @@ a {
   transform: rotate(-45deg);
 }
 
-.modal-close:hover, .modal-close:focus {
+.modal-close:hover,
+.modal-close:focus {
   opacity: 1;
 }
 
@@ -1671,7 +1706,8 @@ a {
   margin-bottom: 33px;
 }
 
-.modal-feedback input, .modal-feedback textarea {
+.modal-feedback input,
+.modal-feedback textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 16px 20px;
@@ -1683,7 +1719,8 @@ a {
   resize: none;
 }
 
-.feedback-form input, .feedback-form label {
+.feedback-form input,
+.feedback-form label {
   display: block;
   width: 360px;
 }
@@ -1708,7 +1745,8 @@ a {
   color: #000000;
 }
 
-.feedback-form input, .feedback-form textarea {
+.feedback-form input,
+.feedback-form textarea {
   background-color: #f2f2f2;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -1726,11 +1764,13 @@ a {
   padding: 8px 35px;
 }
 
-.feedback-form input:hover, .feedback-form textarea:hover {
+.feedback-form input:hover,
+.feedback-form textarea:hover {
   background-color: #ebebeb;
 }
 
-.feedback-form input:focus, .feedback-form textarea:focus {
+.feedback-form input:focus,
+.feedback-form textarea:focus {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1744,7 +1784,8 @@ a {
   background-color: #f6dada;
 }
 
-.feedback-form input::-moz-placeholder, .feedback-form textarea::-moz-placeholder {
+.feedback-form input::-moz-placeholder,
+.feedback-form textarea::-moz-placeholder {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -1753,7 +1794,8 @@ a {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.feedback-form input::-webkit-input-placeholder, .feedback-form textarea::-webkit-input-placeholder {
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -1762,7 +1804,8 @@ a {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.feedback-form input:-ms-input-placeholder, .feedback-form textarea:-ms-input-placeholder {
+.feedback-form input:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -1869,7 +1912,8 @@ a {
   left: 107px;
 }
 
-.catalog-filter-form .price-label, .catalog-filter-form .price-value {
+.catalog-filter-form .price-label,
+.catalog-filter-form .price-value {
   border: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
@@ -1883,6 +1927,7 @@ a {
   color: rgba(0, 0, 0, .3);
 }
 
-.catalog-nav-button:focus, .catalog-nav-button:hover {
+.catalog-nav-button:focus,
+.catalog-nav-button:hover {
   background-color: #d9d9d9;
 }
