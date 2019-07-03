@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
 
@@ -413,7 +413,7 @@ a {
 .contacts-map-link {
   display: block;
   height: 222px;
-  margin-bottom: 65px;
+  margin-bottom: 71px;
   width: 560px;
 }
 
@@ -557,10 +557,6 @@ a {
 
 .footer-user-navigation-compare a {
   margin-left: -3px;
-}
-
-.footer-user-navigation > * {
-  border: 1px solid salmon;
 }
 
 .footer-user-navigation-logout a {
@@ -1564,7 +1560,6 @@ catalog-filter-form .button-show {
 
 .contacts .modal-link {
   padding-left: 2px;
-  padding-top: 13px;
 }
 
 .about-us .modal-link {
