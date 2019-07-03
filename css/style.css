@@ -46,15 +46,19 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -659,12 +663,11 @@ a {
   margin-bottom: 37px;
 }
 
-
 .image-and-hover-buttons-wrapper {
   position: relative;
 }
 
-.image-and-hover-buttons-wrapper:hover img{
+.image-and-hover-buttons-wrapper:hover img {
   opacity: 0.7;
 }
 
@@ -695,11 +698,9 @@ a {
   text-align: center;
   border: none;
   background-color: transparent;
-
 }
 
-.compare-button:hover,
-.compare-button:focus {
+.compare-button:hover, .compare-button:focus {
   color: #000000;
 }
 
@@ -729,12 +730,9 @@ a {
   color: rgba(0, 0, 0, 0.2);
   border: 3px solid rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 50%;
 }
-
-
-
 
 .catalog-page-top-wrapper h1 {
   margin-bottom: 25px;
@@ -898,8 +896,6 @@ a {
   background-image: url(../img/radio-off.svg);
 }
 
-
-
 .button-show::after {
   content: "";
   position: absolute;
@@ -992,13 +988,11 @@ a {
   padding: 0;
 }
 
-
 .catalog-pagination-pages a:hover {
-  color: rgba(0,0,0,.6);
+  color: rgba(0, 0, 0, .6);
 }
 
-.catalog-pagination-pages a:active,
-.catalog-pagination-pages a.current {
+.catalog-pagination-pages a:active, .catalog-pagination-pages a.current {
   color: #000;
 }
 
@@ -1875,8 +1869,7 @@ a {
   left: 107px;
 }
 
-.catalog-filter-form .price-label,
-.catalog-filter-form .price-value {
+.catalog-filter-form .price-label, .catalog-filter-form .price-value {
   border: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
@@ -1887,7 +1880,7 @@ a {
 
 .catalog-nav-button:active {
   background-color: #d9d9d9;
-  color: rgba(0,0,0,.3);
+  color: rgba(0, 0, 0, .3);
 }
 
 .catalog-nav-button:focus, .catalog-nav-button:hover {

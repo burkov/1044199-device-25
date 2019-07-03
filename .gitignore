@@ -9,6 +9,7 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+package-lock.json
 
 img/copy.png
 img/device-index-1000.jpg
