@@ -50,7 +50,9 @@ a {
   border: 0;
   clip: rect(0 0 0 0);
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -83,18 +85,22 @@ a {
 }
 
 .main-header-top-wrapper {
-  align-items: baseline;
+  -webkit-box-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
   margin-bottom: 28px;
   padding-top: 34px;
 }
 
 .site-search-form {
+  display: -webkit-box;
   display: flex;
   line-height: 30px;
-  margin-right: 102px;
   margin-left: -2px;
+  margin-right: 102px;
   position: relative;
   width: 440px;
 }
@@ -229,8 +235,10 @@ a {
 }
 
 .main-header-site-navigation {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -277,6 +285,7 @@ a {
 
 .main-header-site-nav-catalog:first-child:hover .catalog-categories-list,
 .main-header-site-nav-catalog:first-child>a:focus+.catalog-categories-list {
+  display: -webkit-box;
   display: flex;
 }
 
@@ -338,8 +347,10 @@ a {
 /* main */
 
 .main-content-bottom-wrapper {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin-bottom: 80px;
 }
 
@@ -426,7 +437,9 @@ a {
   left: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
   transition: height 0.3s;
   width: 100%;
   z-index: -1;
@@ -439,7 +452,9 @@ a {
   left: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
   transition: height 0.3s;
   width: 100%;
   z-index: -1;
@@ -468,8 +483,10 @@ a {
 }
 
 .footer-upper-wrapper {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin-bottom: 7px;
 }
 
@@ -480,6 +497,7 @@ a {
 }
 
 .footer-user-navigation {
+  display: -webkit-box;
   display: flex;
 }
 
@@ -533,8 +551,8 @@ a {
 }
 
 .footer-user-navigation-logout a {
-  padding-left: 0;
   margin-left: -17px;
+  padding-left: 0;
 }
 
 .footer-user-navigation-compare a {
@@ -573,7 +591,9 @@ a {
 
 .footer-lower-wrapper,
 .footer-central-wrapper {
-  align-items: baseline;
+  -webkit-box-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
   display: flex;
   margin-bottom: 45px;
   position: relative;
@@ -601,8 +621,10 @@ a {
 }
 
 .main-footer .footer-site-navigation {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
   width: 428px;
 }
@@ -635,8 +657,10 @@ a {
 }
 
 .footer-social ul {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   width: 140px;
 }
 
@@ -785,8 +809,10 @@ a {
 }
 
 .breadcrumbs {
+  display: -webkit-box;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
   list-style: none;
   margin-right: 37px;
   padding: 0;
@@ -801,7 +827,8 @@ a {
   position: absolute;
   right: -20px;
   top: 6px;
-  transform: rotate(-45deg) scale(0.73);
+  -webkit-transform: rotate(-45deg) scale(0.73);
+          transform: rotate(-45deg) scale(0.73);
   width: 7px;
   z-index: 1;
 }
@@ -831,6 +858,7 @@ a {
 }
 
 .catalog-content .container {
+  display: -webkit-box;
   display: flex;
 }
 
@@ -944,7 +972,9 @@ catalog-filter-form .button-show {
   left: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
   transition: height 0.3s;
   width: 100%;
   z-index: -1;
@@ -957,7 +987,9 @@ catalog-filter-form .button-show {
   left: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
   transition: height 0.3s;
   width: 100%;
   z-index: -1;
@@ -992,6 +1024,7 @@ catalog-filter-form .button-show {
 }
 
 .catalog-list {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -1010,11 +1043,14 @@ catalog-filter-form .button-show {
 }
 
 .catalog-pagination {
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   background-color: #ebebeb;
   box-sizing: border-box;
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin: 20px 0 75px 20px;
   min-height: 70px;
   padding: 0;
@@ -1022,8 +1058,10 @@ catalog-filter-form .button-show {
 }
 
 .catalog-pagination-pages {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   list-style: none;
   margin: 0 0 0 15px;
   min-width: 90px;
@@ -1060,8 +1098,10 @@ catalog-filter-form .button-show {
 }
 
 .catalog-item-bottom-wrapper {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin-top: 28px;
   width: 360px;
 }
@@ -1127,8 +1167,9 @@ catalog-filter-form .button-show {
 }
 
 .slides-list-item {
-  justify-content: space-between;
   display: none;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .slides-list-item-image {
@@ -1177,8 +1218,10 @@ catalog-filter-form .button-show {
 }
 
 .catalog-categories ul {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1219,16 +1262,18 @@ catalog-filter-form .button-show {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 
 .catalog-categories-item:nth-child(2) svg {
-  position: absolute;
-  top: auto;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  position: absolute;
+  top: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .slides-list-item-description {
@@ -1254,8 +1299,8 @@ catalog-filter-form .button-show {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
-  line-height: 30px;
   letter-spacing: 0.01em;
+  line-height: 30px;
   margin-bottom: 51px;
   width: 490px;
 }
@@ -1304,6 +1349,7 @@ catalog-filter-form .button-show {
 }
 
 .slides-list-item-shown {
+  display: -webkit-box;
   display: flex;
 }
 
@@ -1329,12 +1375,14 @@ catalog-filter-form .button-show {
 
 .services {
   background-color: #e5e5e5;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(25%, #fff), color-stop(25%, #e5e5e5), to(#e5e5e5));
   background-image: linear-gradient(to bottom, #fff 0, #fff 25%, #e5e5e5 25%, #e5e5e5 100%);
   margin-bottom: 92px;
   min-height: 385px;
 }
 
 .services .container {
+  display: -webkit-box;
   display: flex;
   min-height: 320px;
   padding-left: 2px;
@@ -1376,7 +1424,9 @@ catalog-filter-form .button-show {
   left: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: height .3s;
   transition: height .3s;
   width: 100%;
   z-index: -1;
@@ -1389,7 +1439,9 @@ catalog-filter-form .button-show {
   left: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
   transition: height 0.3s;
   width: 100%;
   z-index: -1;
@@ -1464,8 +1516,10 @@ catalog-filter-form .button-show {
 }
 
 .featured-brands ul {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   list-style: none;
   margin: 0 0 100px;
   padding: 0;
@@ -1509,8 +1563,8 @@ catalog-filter-form .button-show {
 }
 
 .contacts .modal-link {
-  padding-top: 13px;
   padding-left: 2px;
+  padding-top: 13px;
 }
 
 .about-us .modal-link {
@@ -1531,13 +1585,17 @@ catalog-filter-form .button-show {
 
 .services-list {
   border-right: 7px solid #000;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
   list-style: none;
   margin: 0;
-  padding: 0;
   min-width: 277px;
+  padding: 0;
 }
 
 .services-list-item {
@@ -1550,22 +1608,28 @@ catalog-filter-form .button-show {
 /* FIXME: sort and deduplicate all css */
 
 .catalog-header .container {
+  display: -webkit-box;
   display: flex;
 }
 
 .catalog-content {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eee), color-stop(28%, #eee), color-stop(28%, #fff), to(#fff));
   background-image: linear-gradient(to right, #eee 0, #eee 28%, #fff 28%, #fff 100%);
 }
 
 .catalog-header {
+  background-image: -webkit-gradient(linear, left top, right top, from(#dcdcdc), color-stop(50%, #dcdcdc), color-stop(50%, #ebebeb), to(#ebebeb));
   background-image: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 50%, #ebebeb 50%, #ebebeb 100%);
 }
 
 .catalog-header-sorting {
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   background-color: #ebebeb;
+  display: -webkit-box;
   display: flex;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
   flex-grow: 1;
   padding-bottom: 23px;
   padding-top: 23px;
@@ -1592,6 +1656,7 @@ catalog-filter-form .button-show {
 }
 
 .catalog-header-sorting ul {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -1642,12 +1707,14 @@ catalog-filter-form .button-show {
 }
 
 .catalog-header-sorting .catalog-header-sorting-direction {
+  display: -webkit-box;
   display: flex;
   list-style: none;
   margin-left: auto;
 }
 
 .catalog-header-sorting-type {
+  display: -webkit-box;
   display: flex;
   list-style: none;
   padding-left: 20px;
@@ -1695,17 +1762,20 @@ catalog-filter-form .button-show {
   left: 50%;
   position: fixed;
   top: 120px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 4;
 }
 
 .modal-shown {
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
   display: block;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-close {
@@ -1735,11 +1805,13 @@ catalog-filter-form .button-show {
 }
 
 .modal-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-close:hover,
@@ -1793,9 +1865,9 @@ catalog-filter-form .button-show {
 
 .feedback-form-wrapper {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .feedback-form label {
@@ -1899,7 +1971,9 @@ catalog-filter-form .button-show {
   left: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
   transition: height 0.3s;
   width: 100%;
   z-index: -1;
@@ -1912,7 +1986,9 @@ catalog-filter-form .button-show {
   left: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
   transition: height 0.3s;
   width: 100%;
   z-index: -1;
@@ -1959,7 +2035,8 @@ catalog-filter-form .button-show {
 }
 
 .range-toggle:active {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .range-toggle-min {
