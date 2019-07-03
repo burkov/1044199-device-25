@@ -1,31 +1,31 @@
 /* шрифты */
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/opensanslight.woff2') format('woff2');
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/opensans.woff2') format('woff2');
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
-  src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/gilroylight.woff2') format('woff2');
+  src: url("../fonts/gilroylight.woff2") format("woff2");
 }
 
 /* глобальные стили */
@@ -237,7 +237,7 @@ a {
 
 .main-header-site-navigation a {
   color: #000;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: .2em;
@@ -588,7 +588,7 @@ a {
 
 .footer-site-navigation a {
   color: #fff;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: .2em;
@@ -1016,7 +1016,7 @@ a {
 
 .catalog-pagination-pages a {
   color: rgba(0, 0, 0, .3);
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: .2em;
@@ -1025,7 +1025,7 @@ a {
 
 .catalog-nav-button {
   color: #000;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: .2em;
@@ -1048,7 +1048,7 @@ a {
 
 .catalog-item-bottom-wrapper a {
   color: #000;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: .01em;
@@ -1058,7 +1058,7 @@ a {
 
 .catalog-item-bottom-wrapper p {
   color: #464646;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: .01em;
@@ -1123,7 +1123,7 @@ a {
 .slides-list-item-description::after {
   color: #fff;
   content: "";
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 180px;
   font-weight: 700;
   letter-spacing: .01em;
@@ -1156,7 +1156,7 @@ a {
 
 .catalog-categories a {
   color: #000;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1198,7 +1198,7 @@ a {
 
 .slides-list-item-description-headline {
   color: #000;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 700;
   letter-spacing: .01em;
@@ -1231,7 +1231,7 @@ a {
 }
 
 .slides-list-item-description-params tr:first-child {
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   letter-spacing: .01em;
   line-height: 48px;
@@ -1301,7 +1301,7 @@ a {
 .services-list-item-link {
   color: #000;
   display: block;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: .2em;
@@ -1367,7 +1367,7 @@ a {
 }
 
 .services-content-headline {
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 700;
   letter-spacing: .01em;
@@ -1534,7 +1534,7 @@ a {
 .catalog-header-sorting h2,
 .catalog-header-filter h2 {
   color: #000;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: .23em;
