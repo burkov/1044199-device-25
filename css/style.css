@@ -502,8 +502,8 @@ a {
 }
 
 .footer-user-navigation li {
-  margin-left: 33px;
-  padding-top: 3px;
+  margin-left: 36px;
+  padding-top: 1px;
 }
 
 .footer-user-navigation a {
@@ -541,6 +541,7 @@ a {
   display: block;
   height: 30px;
   left: 0;
+  top: -4px;
   position: absolute;
   width: 30px;
 }
