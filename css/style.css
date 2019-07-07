@@ -1686,6 +1686,8 @@ catalog-filter-form .button-show {
   opacity: 0.4;
 }
 
+.catalog-header-sorting-direction-asc.current::before,
+.catalog-header-sorting-direction-desc.current::before,
 .catalog-header-sorting-direction-asc:active::before,
 .catalog-header-sorting-direction-desc:active::before {
   cursor: pointer;
