@@ -879,7 +879,11 @@ a {
   position: relative;
 }
 
-.catalog-filter-form fieldset::before {
+.catalog-filter-fieldset-wrapper {
+  border-top: 2px solid #000;
+}
+
+/* .catalog-filter-form fieldset::before {
   background-color: #000;
   content: "";
   height: 2px;
@@ -887,7 +891,7 @@ a {
   position: absolute;
   top: 0;
   width: 100%;
-}
+} */
 
 .catalog-filter-form legend {
   color: #000000;
@@ -897,7 +901,7 @@ a {
   letter-spacing: 0.01em;
   line-height: 24px;
   margin-bottom: 18px;
-  padding-top: 12px;
+  padding-top: 10px;
   text-transform: none;
 }
 

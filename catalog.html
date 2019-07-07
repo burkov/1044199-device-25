@@ -101,68 +101,73 @@
         <div class="container">
           <div class="filter">
             <form class="catalog-filter-form" action="catalog-filter" method="GET">
-              <fieldset>
-                <legend>Стоимость</legend>
-                <div class="filter-price-range">
-                  <div class="filter-price-controls">
-                    <div class="empty-bar">
-                      <div class="bar"></div>
+              <div class="catalog-filter-fieldset-wrapper">
+                <fieldset>
+                  <legend>Стоимость</legend>
+                  <div class="filter-price-range">
+                    <div class="filter-price-controls">
+                      <div class="empty-bar">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
                     </div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
+                    <label class="price-label" for="filter-min-price">от</label>
+                    <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
+                    <label class="price-label price-label-max" for="filter-max-price">до</label>
+                    <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
                   </div>
-                  <label class="price-label" for="filter-min-price">от</label>
-                  <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
-                  <label class="price-label price-label-max" for="filter-max-price">до</label>
-                  <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Цвет</legend>
-                <ul class="filter-list-color">
-                  <li>
-                    <input class="visually-hidden form-input-cb" type="checkbox" id="color-black" name="color-black"
-                      checked>
-                    <label class="form-label" for="color-black">Черный</label>
-                  </li>
-                  <li>
-                    <input class="visually-hidden form-input-cb" type="checkbox" id="color-white" name="color-white">
-                    <label class="form-label" for="color-white">
-                      Белый
-                    </label>
-                  </li>
-                  <li>
-                    <input class="visually-hidden form-input-cb" type="checkbox" id="color-blue" name="color-blue"
-                      checked>
-                    <label class="form-label" for="color-blue">Синий</label>
-                  </li>
-                  <li>
-                    <input class="visually-hidden form-input-cb" type="checkbox" id="color-red" name="color-red"
-                      checked>
-                    <label class="form-label" for="color-red">Красный</label>
-                  </li>
-                  <li>
-                    <input class="visually-hidden form-input-cb" type="checkbox" id="color-pink" name="color-pink">
-                    <label class="form-label" for="color-pink">Розовый</label>
-                  </li>
-                  <!-- FIXME проверить использование кавычек одного типа -->
-                </ul>
-              </fieldset>
-              <fieldset>
-                <legend>Bluetooth</legend>
-                <ul class="filter-list-bt">
-                  <li>
-                    <input class="visually-hidden form-input-radio" type="radio" id="with-bluetooth"
-                      name="with-bluetooth" value="true" checked>
-                    <label class="form-label" for="with-bluetooth">Есть</label>
-                  </li>
-                  <li>
-                    <input class="visually-hidden form-input-radio" type="radio" id="without-bluetooth"
-                      name="with-bluetooth" value="false">
-                    <label class="form-label" for="without-bluetooth">Нет</label>
-                  </li>
-                </ul>
-              </fieldset>
+                </fieldset>
+              </div>
+              <div class="catalog-filter-fieldset-wrapper">
+                <fieldset>
+                  <legend>Цвет</legend>
+                  <ul class="filter-list-color">
+                    <li>
+                      <input class="visually-hidden form-input-cb" type="checkbox" id="color-black" name="color-black"
+                        checked>
+                      <label class="form-label" for="color-black">Черный</label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden form-input-cb" type="checkbox" id="color-white" name="color-white">
+                      <label class="form-label" for="color-white">
+                        Белый
+                      </label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden form-input-cb" type="checkbox" id="color-blue" name="color-blue"
+                        checked>
+                      <label class="form-label" for="color-blue">Синий</label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden form-input-cb" type="checkbox" id="color-red" name="color-red"
+                        checked>
+                      <label class="form-label" for="color-red">Красный</label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden form-input-cb" type="checkbox" id="color-pink" name="color-pink">
+                      <label class="form-label" for="color-pink">Розовый</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="catalog-filter-fieldset-wrapper">
+                <fieldset>
+                  <legend>Bluetooth</legend>
+                  <ul class="filter-list-bt">
+                    <li>
+                      <input class="visually-hidden form-input-radio" type="radio" id="with-bluetooth"
+                        name="with-bluetooth" value="true" checked>
+                      <label class="form-label" for="with-bluetooth">Есть</label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden form-input-radio" type="radio" id="without-bluetooth"
+                        name="with-bluetooth" value="false">
+                      <label class="form-label" for="without-bluetooth">Нет</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
               <button class="button button-show" type="submit">Показать</button>
             </form>
           </div>
